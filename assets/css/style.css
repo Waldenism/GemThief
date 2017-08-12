@@ -4,12 +4,12 @@ body {
 header {
 	background-color: #c67131;
 	width:250px;
-	height:50px;
+	height:40px;
 	font-size: 30px;
 	color:white;
 	font-weight: bold;
 	text-align: center;
-	padding: 25px 0px 10px 0px;
+	padding: 15px 0px 10px 0px;
 	margin:5px;
 }
 #intro {
@@ -17,7 +17,7 @@ header {
 	color:#7daf5e;
 	font-weight: bold;
 	width:400px;
-	height:400px;
+	height:280px;
 	padding:10px 5px 0px 5px;
 	margin:5px;
 }
@@ -28,7 +28,7 @@ header {
 }
 #goalDisplay {
 	width: 200px;
-	height: 100px;
+	height: 80px;
 	background-color: #7daf5e;
 	margin:5px;
 	font-size: 25px;
@@ -40,7 +40,7 @@ header {
 	align-items: center;
 	text-align: center;
 	width: 200px;
-	height:100px;
+	height:80px;
 	background-color: #54fcfb;
 	margin:5px;
 }
@@ -56,7 +56,7 @@ header {
 }
 #numbox {
 	width: 200px;
-	height: 100px;
+	height: 50px;
 	background-color: #33a196;
 	margin:5px;
 	font-size: 25px;
