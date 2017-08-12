@@ -1,3 +1,67 @@
-img {
-	border:solid green 3px;
+header {
+	background-color: #c67131;
+	width:250px;
+	height:50px;
+	font-size: 30px;
+	color:white;
+	font-weight: bold;
+	text-align: center;
+	padding: 25px 0px 10px 0px;
+	margin:5px;
 }
+#intro {
+	background-color: #fce6d1;
+	color:#7daf5e;
+	font-weight: bold;
+	width:400px;
+	height:400px;
+	padding:10px 5px 0px 5px;
+	margin:5px;
+}
+#gameArea {
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-start;
+}
+#goalDisplay {
+	width: 200px;
+	height: 100px;
+	background-color: #7daf5e;
+	margin:5px;
+	font-size: 25px;
+}
+#scoreDisplay {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	align-items: center;
+	text-align: center;
+	width: 200px;
+	height:100px;
+	background-color: #54fcfb;
+	margin:5px;
+}
+#snes {
+	width: 200px;
+	height: 20px;
+	background-color: #33a196;
+	margin:5px;
+	font-size: 12px;
+	color:white;
+	padding: 5px 0px 0px 5px;
+	font-weight: bold;
+}
+#numbox {
+	width: 200px;
+	height: 100px;
+	background-color: #33a196;
+	margin:5px;
+	font-size: 25px;
+	color:white;
+	padding: 5px 0px 0px 5px;
+}
+.gemPic{
+	margin:2px;
+}
+
+

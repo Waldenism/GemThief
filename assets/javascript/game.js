@@ -1,5 +1,5 @@
 $(document).ready(function() {
-gems = ["assets/images/green.jpg", "assets/images/blue.jpg", "assets/images/opal.jpg", "assets/images/pink.jpg"];
+gems = ["assets/images/pink.jpg", "assets/images/blue.jpg", "assets/images/green.jpg", "assets/images/opal.jpg"];
 
 var wins = 0;
 var losses = 0;
@@ -54,7 +54,7 @@ function game() {
 			gemGen();
 			game();
 		} else if (score > goalNum) {
-			$("#prompt").text("Better luck next time")
+			$("#prompt").text("Better luck next time ;(")
 			losses++;
 			$("#losses").text(losses);
 			$("#gems").empty();
