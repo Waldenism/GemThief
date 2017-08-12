@@ -1,6 +1,6 @@
 $(document).ready(function() {
-gems = ["assets/images/pink.jpg", "assets/images/blue.jpg", "assets/images/green.jpg", "assets/images/opal.jpg"];
 
+gems = ["assets/images/pink.jpg", "assets/images/blue.jpg", "assets/images/green.jpg", "assets/images/opal.jpg"];
 var wins = 0;
 var losses = 0;
 $("#wins").text(wins);
@@ -13,25 +13,26 @@ game();
 function gemGen () {
 		var gemValues = []
 			while(gemValues.length < 4){
-			  var randomnumber = ((Math.floor(Math.random()*12)) + 1) 
+			  var randNum = ((Math.floor(Math.random()*12)) + 1) 
 			  var found = false;
 			  for (var i = 0; i < gemValues.length; i++){
-				if (gemValues[i] === randomnumber){
+				if (gemValues[i] === randNum){
 					found = true; break
 				}
 			  }
-			  if(!found)gemValues[gemValues.length] = randomnumber;
+			  if(!found)gemValues[gemValues.length] = randNum;
 			}
 
 		//sets the source, value and, class for the gem img's
 		for (i = 0; i < gemValues.length; i++) {
 			var gemHolder = $("<img>");
-			gemHolder.attr("data-val", gemValues[i]);
+			gemHolder.attr("data-num", gemValues[i]);
 			gemHolder.attr("src", gems[i]);
-			gemHolder.attr("alt", "gem");
+			gemHolder.attr("alt", "gems");
 			gemHolder.addClass("gemPic")
 			$("#gems").append(gemHolder);
 		}
+		console.log(gemValues);
 }
 
 function game() {
@@ -41,8 +42,10 @@ function game() {
 	var goalNum = Math.floor(Math.random()*(102) + 19);
 
 	$("#goal").text(goalNum);
-	$('#gems').on("click", '.gemPic', function(){
-		score += parseInt($(this).data("val"));
+
+
+	$('.gemPic').on("click", function(){
+		score += parseInt($(this).data("num"));
 
 		$("#score").text(score);
 
