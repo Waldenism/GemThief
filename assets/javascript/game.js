@@ -1,6 +1,6 @@
 $(document).ready(function() {
 
-gems = ["assets/images/pink.jpg", "assets/images/blue.jpg", "assets/images/green.jpg", "assets/images/opal.jpg"];
+gems = ["assets/images/green.jpg", "assets/images/opal.jpg", "assets/images/pink.jpg", "assets/images/blue.jpg"];
 var wins = 0;
 var losses = 0;
 $("#wins").text(wins);
