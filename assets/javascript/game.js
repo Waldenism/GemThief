@@ -13,7 +13,7 @@ game();
 function gemGen () {
 		var gemValues = []
 			while(gemValues.length < 4){
-			  var randomnumber = Math.floor(Math.random()*13)
+			  var randomnumber = ((Math.floor(Math.random()*12)) + 1) 
 			  var found = false;
 			  for (var i = 0; i < gemValues.length; i++){
 				if (gemValues[i] === randomnumber){
